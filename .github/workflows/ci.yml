@@ -20,5 +20,7 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-    - run: npm install
+        
+    - run: npm ci
+    - run: npm install jest
     - run: npm test
